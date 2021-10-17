@@ -76,6 +76,10 @@ body {
 	background: orange;
 }
 
+.menu-label:checked {
+	color: aqua;
+}
+
 .dot-radio {
 	width: 100%;
 	height: 85%;
