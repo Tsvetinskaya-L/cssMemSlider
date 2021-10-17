@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: darkgray;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container {
+	height: 900px;
+	max-width: 1600px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.description {
+	font-size: 32px;
+	height: 15%;
+	font-family: "Arial", "Helvetica", sans-serif;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	height: 15%;
+	display: flex;
+	right: 0;
+	z-index: 900;
+	width: 30%;
+	bottom: 0;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.menu-label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	width: 32px;
+	height: 32px;
+	background: black;
+	border-radius: 50px;
+}
+
+.menu-label::before {
+	content: "";
+	position: absolute;
+	display: block;
+	top: -15px;
+	left: -15px;
+	right: -15px;
+	bottom: -15px;
+}
+
+.dot-radio {
+	width: 100%;
+	height: 85%;
+}
+
+.slide {
+	width: 1000px;
+	height: 750px;
+	border-radius: 5%;
+	position: absolute;
+	top: 0;
+	left: 102%;
+	z-index: 10;
+	background-size: cover;
+	transition: left 0s 0.1s;
+}
+
+[id^="slide"]:checked + .slide {
+	left: 20%;
+	z-index: 100;
+	transition: left 0.1s ease-out;
+}
+
+.text {
+	width: 100%;
+	height: 77%;
+	top: 0;
+	left: 100%;
+	z-index: 10;
+	background-size: cover;
+	transition: left 0s 0.1s;
+}
+
+.slide-1 {
+	background-image: url("../cssMemSlider/assets/cat1.jpg");
+}
+
+.slide-1::after {
+	content: "Да ладно, там на полчаса работы";
+	position: absolute;
+	bottom: -15%;
+	font-size: 32px;
+	left: 26px;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.slide-2 {
+	background-image: url("../cssMemSlider/assets/cat2.jpg");
+}
+
+.slide-2::after {
+	content: "встану пораньше и доделаю...";
+	position: absolute;
+	bottom: -15%;
+	font-size: 32px;
+	left: 26px;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.slide-3 {
+	background-image: url("../cssMemSlider/assets/cat3.jpg");
+}
+
+.slide-3::after {
+	content: "Завтра сделаю ";
+	position: absolute;
+	bottom: -15%;
+	font-size: 32px;
+	left: 26px;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.slide-4 {
+	background-image: url("../cssMemSlider/assets/cat4.jpg");
+}
+
+.slide-4::after {
+	content: "А что, только вам можо ?";
+	position: absolute;
+	bottom: -15%;
+	font-size: 32px;
+	left: 26px;
+	font-family: "Arial", "Helvetica", sans-serif;
+}
+
+.slide-5 {
+	background-image: url("../cssMemSlider/assets/cat5.jpg");
+}
+
+.slide-5::after {
+	content: "Всё, сдаюсь ...";
+	position: absolute;
+	bottom: -15%;
+	font-size: 32px;
+
+	font-family: "Arial", "Helvetica", sans-serif;
+	left: 26px;
+}
+
